@@ -9,11 +9,11 @@
     window.Apiary = window.Apiary || {};
     window.Apiary.PAGE = "API_DOCUMENTATION";
     window.Apiary.APPLICATION_DATA = {
-      apiName:         "Website API",
-      apiSubdomain:  "peakfunnels",,
+      apiName:         "PeakFunnels API",
+      apiSubdomain:    "peakfunnelsapi",
       applicationName: "docs",
       domain:          "docs.apiary.io",
-      baseAjaxUrl:   "https://peakfunnels.docs.apiary.io/",
+      baseAjaxUrl:     "https://peakfunnelsapi.docs.apiary.io/",
       features: {
         "3ColumnDocumentation":    true,
         "clientSideConsole":       true,
@@ -26,11 +26,8 @@
     };
   </script>
 
-  <!-- 2) Apiary embed script (with CORS) -->
-  <script
-    src="https://static.apiary.io/embed/apiary.js"
-    crossorigin="anonymous"
-  ></script>
+  <!-- 2) Apiary embed script -->
+  <script src="https://static.apiary.io/embed/apiary.js"></script>
 
   <style>
     html, body, #apiary-api-documentation {
@@ -45,13 +42,12 @@
   </style>
 </head>
 <body>
-  <!-- 3) This DIV must match your domain+subdomain+application -->
-<div 
-  id="apiary-api-documentation"
-  data-apiary-domain="docs.apiary.io"
-  data-apiary-subdomain="peakfunnels"
-  data-apiary-application="docs">
-</div>
-
+  <!-- 3) THIS DIV must match the domain + subdomain + application -->
+  <div
+    id="apiary-api-documentation"
+    data-apiary-domain="docs.apiary.io"
+    data-apiary-subdomain="peakfunnelsapi"
+    data-apiary-application="docs">
+  </div>
 </body>
 </html>
