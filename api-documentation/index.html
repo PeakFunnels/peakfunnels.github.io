@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>PeakFunnels API Docs</title>
 
   <script>
     window.Apiary = window.Apiary || {};
     window.Apiary.PAGE = "API_DOCUMENTATION";
     window.Apiary.APPLICATION_DATA = {
-      "apiName":          "Website API",
-      "apiSubdomain":     "websitebuilder",
-      "applicationName":  "docs",
-      "domain":           "apiary.io",
-      "baseAjaxUrl":      "https://websitebuilder.docs.apiary.io/",
-      "features": {
-        "3ColumnDocumentation":     true,
-        "clientSideConsole":        true,
-        "browserExtensionConsole":  true
-      }
+      apiName:         "Website API",
+      apiSubdomain:    "websitebuilder",
+      applicationName: "docs",                    /* ← this is required */
+      domain:          "apiary.io",
+      baseAjaxUrl:     "https://websitebuilder.docs.apiary.io/",
+      features: {
+        "3ColumnDocumentation":    true,
+        "clientSideConsole":       true,
+        "browserExtensionConsole": true
+      },
+      jsLoginUrl:    "",
+      mockserverUrl: "",
+      loginUri:      "",
+      baseDomain:    ""
     };
   </script>
 
@@ -25,22 +29,18 @@
 
   <style>
     html, body, #apiary-api-documentation {
-      margin: 0;
-      padding: 0;
-      height: 100%;
+      margin: 0; padding: 0; height: 100%;
     }
     #apiary-api-documentation {
-      width: 100%;
+      width: 100%; height: 100vh;
     }
   </style>
 </head>
 <body>
-  <!-- the embed script looks for this exact id -->
-<div
-  id="apiary-api-documentation"
-  data-apiary-domain="apiary.io"
-  data-apiary-subdomain="websitebuilder"
-  style="width:100%; height:100vh;"
-></div>
+  <div
+    id="apiary-api-documentation"
+    data-apiary-domain="apiary.io"
+    data-apiary-subdomain="websitebuilder"
+  ></div>
 </body>
 </html>
