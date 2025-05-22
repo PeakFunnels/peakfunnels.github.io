@@ -1,16 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>PeakFunnels API Docs</title>
+
   <script>
     window.Apiary = window.Apiary || {};
     window.Apiary.PAGE = "API_DOCUMENTATION";
     window.Apiary.APPLICATION_DATA = {
-      "apiName":        "Website API",
-      "apiSubdomain":   "websitebuilder",
-      "domain":         "apiary.io",
-      "baseAjaxUrl":    "https://websitebuilder.docs.apiary.io/",
+      "apiName":       "Website API",
+      "apiSubdomain":  "websitebuilder",
+      "applicationName": "docs",
+      "domain":        "apiary.io",
+      "baseAjaxUrl":   "https://websitebuilder.docs.apiary.io/",
       "features": {
         "3ColumnDocumentation":    true,
         "clientSideConsole":       true,
@@ -18,23 +20,22 @@
       }
     };
   </script>
+
   <script src="https://static.apiary.io/embed/apiary.js"></script>
+
   <style>
-    html, body {
+    html, body, #apiary-api-documentation {
       margin: 0;
       padding: 0;
       height: 100%;
     }
-    [data-apiary-domain][data-apiary-subdomain] {
-      width: 100%;
-      height: 100vh;
-    }
   </style>
 </head>
 <body>
-  <div
-    data-apiary-domain="apiary.io"
-    data-apiary-subdomain="websitebuilder">
+  <div id="apiary-api-documentation"
+       data-apiary-domain="apiary.io"
+       data-apiary-subdomain="websitebuilder"
+       style="width:100%; height:100%;">
   </div>
 </body>
 </html>
