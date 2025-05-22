@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>PeakFunnels API Docs</title>
 
+  <!-- 1) Inline your Apiary config -->
   <script>
     window.Apiary = window.Apiary || {};
     window.Apiary.PAGE = "API_DOCUMENTATION";
@@ -25,19 +26,23 @@
     };
   </script>
 
+  <!-- 2) Load the Apiary embed script -->
   <script src="https://static.apiary.io/embed/apiary.js"></script>
 
   <style>
     html, body, #apiary-api-documentation {
-      margin: 0; padding: 0; height: 100%;
+      margin: 0;
+      padding: 0;
+      height: 100%;
     }
     #apiary-api-documentation {
-      width: 100%; height: 100vh;
+      width: 100%;
+      height: 100vh;
     }
   </style>
 </head>
 <body>
-  <!-- this DIV is where Apiary will inject your docs -->
+  <!-- 3) This DIV must have exactly this ID -->
   <div id="apiary-api-documentation"
        data-apiary-domain="docs.apiary.io"
        data-apiary-subdomain="websitebuilder">
