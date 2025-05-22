@@ -26,8 +26,11 @@
     };
   </script>
 
-  <!-- 2) Apiary embed script -->
-  <script src="https://static.apiary.io/embed/apiary.js"></script>
+  <!-- 2) Apiary embed script (with CORS) -->
+  <script
+    src="https://static.apiary.io/embed/apiary.js"
+    crossorigin="anonymous"
+  ></script>
 
   <style>
     html, body, #apiary-api-documentation {
@@ -42,7 +45,7 @@
   </style>
 </head>
 <body>
-  <!-- 3) THIS DIV must match the domain + subdomain + application -->
+  <!-- 3) This DIV must match your domain+subdomain+application -->
   <div
     id="apiary-api-documentation"
     data-apiary-domain="docs.apiary.io"
