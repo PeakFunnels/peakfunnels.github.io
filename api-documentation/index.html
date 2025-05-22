@@ -2,10 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>🧪 Test Page</title>
+  <title>PeakFunnels API Docs</title>
+  <script>
+    window.Apiary = {
+      PAGE: "API_DOCUMENTATION",
+      APPLICATION_DATA: {
+        apiName:      "Website API",
+        apiSubdomain: "websitebuilder",
+        domain:       "apiary.io",
+        baseAjaxUrl:  "https://websitebuilder.docs.apiary.io/",
+        features: {
+          3ColumnDocumentation:     true,
+          clientSideConsole:        true,
+          browserExtensionConsole:  true
+        }
+      }
+    };
+  </script>
+  <script src="https://static.apiary.io/embed/apiary.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    /* the embed looks for a DIV with these data-attributes */
+    [data-apiary-domain][data-apiary-subdomain] {
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
 </head>
 <body>
-  <h1>✅ Hello World!</h1>
-  <p>If you see this, /api-documentation/ is now being served.</p>
+  <div
+    data-apiary-domain="apiary.io"
+    data-apiary-subdomain="websitebuilder">
+  </div>
 </body>
 </html>
