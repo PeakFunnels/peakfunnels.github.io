@@ -1,1 +1,7 @@
-<!DOCTYPE html><html><head><title></title><link rel="stylesheet" href="/stylesheets/style.css"></head><body><h1>Cannot retrieve file 'embed/apiary.js'.</h1><h2></h2><pre></pre></body></html>
+﻿;(function(window, document) {
+  // this tiny loader simply injects Apiary's real embed script
+  var s = document.createElement('script');
+  s.src = 'https://static.apiary.io/embed/apiary.js';
+  s.async = true;
+  document.head.appendChild(s);
+})(window, document);
